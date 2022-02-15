@@ -9,7 +9,6 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
           <a href="#intro" className="logo">
             Portfolio
             </a>
-        </div>
 
         <div className="itemContainer">
           <Person className="icon"/>
@@ -19,6 +18,7 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
         <div className="itemContainer">
           <Mail className="icon" />
           <span>mohamm1417@gmail.com</span>
+        </div>
         </div>
 
         <div className="right">

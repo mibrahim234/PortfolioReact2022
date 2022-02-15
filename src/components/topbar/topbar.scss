@@ -43,8 +43,8 @@ transition: all 1s ease; //color transition smooth
               }
           }
       }
-      .right {
 
+      .right {
             .hamburger {
                 width: 32px;
                 height: 25px;
@@ -69,21 +69,21 @@ transition: all 1s ease; //color transition smooth
 
         .hamburger {
             span{ 
+                
                 // child is for the lines on the corner 
                 &:first-child {
-                    background-color: white;
-                  transform: rotate(45deg);
+                background-color: white;
+                  // transform: rotate(45deg);
                 }
                 &:nth-child(2) { //dont want to see this one
-                    opacity: 0;
-                }
-                &:last-child {
+                    // opacity: 0;
                     background-color: white;
-                   transform: rotate(-45deg);
-                   
-
+                }
+                &:last-child  {
+                    background-color: white;
+                //  transform: rotate(-45deg);
                 }
             }
-        }
+       }
     }
 }
