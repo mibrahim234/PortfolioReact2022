@@ -7,14 +7,15 @@ background-color: white;
 color: $mainColor;
 position: fixed;
 top: 0; 
-z-index: 2;
+z-index: 3;
+transition: all 1s ease; //color transition smooth 
 
     .wrapper{
         padding: 10px 30px;
         display: flex; // flexbox
         align-items: center;
         justify-content: space-between;
-    }
+    
 
     .left {
             display: flex;
@@ -39,6 +40,49 @@ z-index: 2;
             span {
                 font-size: 15px;
                 font-weight: 500;
+              }
+          }
+      }
+      .right {
+
+            .hamburger {
+                width: 32px;
+                height: 25px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                cursor: pointer; // mouse points at it
+
+                span {
+                    width: 100px;
+                    height: 3px;
+                    background-color: $mainColor;
+                    transform-origin: left;
+                    transition: all 2s ease;
+                }
+            }
+      }
+    }
+    &.active{ // if using the class active navbar will be blue
+        background-color: $mainColor;
+        color: white;
+
+        .hamburger {
+            span{ 
+                // child is for the lines on the corner 
+                &:first-child {
+                    background-color: white;
+                  transform: rotate(45deg);
+                }
+                &:nth-child(2) { //dont want to see this one
+                    opacity: 0;
+                }
+                &:last-child {
+                    background-color: white;
+                   transform: rotate(-45deg);
+                   
+
+                }
             }
         }
     }
