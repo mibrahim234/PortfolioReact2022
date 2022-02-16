@@ -4,8 +4,8 @@ import PortfolioList from "../portfolioList/PortfolioList";
 
 export default function Portfolio() {
  const [selected, setSelected] = useState("featured");
- // const [data, setData] = useState([]);
-  const list = [
+
+ const list = [
     {
       id: "alphaDev",
       title: "AlphaDev",
@@ -31,31 +31,6 @@ export default function Portfolio() {
       title: "Project6",
     },
   ];
-
-  // useEffect(() => {
-  //   switch (selected) {
-  //     case "alphaDev":
-  //       setData(featuredPortfolio);
-  //       break;
-  //     case "movieLand":
-  //       setData(webPortfolio);
-  //       break;
-  //     case "discoverEats":
-  //       setData(mobilePortfolio);
-  //       break;
-  //     case "codingQuiz":
-  //       setData(designPortfolio);
-  //       break;
-  //     case "project5":
-  //       setData(contentPortfolio);
-  //       break;
-  //       case "project6":
-  //       setData(contentPortfolio);
-  //       break;
-  //     default:
-  //       setData(featuredPortfolio);
-  //   }
-  // }, [selected]);
 
   return (
     <div className='portfolio' id="portfolio">
