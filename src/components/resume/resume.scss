@@ -1,0 +1,21 @@
+.resume {
+background-color: #15023a;
+color: #15023a;
+ display:flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+.container { 
+    text-align: center;
+    margin: auto;
+    display: flex;
+    display: grid;
+    .btn {
+         cursor: pointer;
+         border-radius: 30%;
+    }
+    .btn:hover {
+        color: lightblue;
+    }
+}

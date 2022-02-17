@@ -3,7 +3,7 @@ import Intro from "./components/intro/Intro";
 import About from "./components/about/About";
 import Portfolio from "./components/portfolio/Portfolio";
 import Works from "./components/projects/Works";
-import Testimonials from "./components/resume/Testimonials";
+import Resume from "./components/resume/Resume";
 import Contact from "./components/contact/Contact";
 import Menu from "./components/menu/Menu";
 
@@ -21,7 +21,7 @@ function App() {
         <About />
         <Portfolio />
         <Works />
-        <Testimonials />
+        <Resume />
         <Contact />
       </div>
     </div>
