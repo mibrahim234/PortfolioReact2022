@@ -60,6 +60,7 @@ const handleSubmit = (e) => {
 <input type="text" placeholder="Subject" name="user_subject" />
 <input type="text" placeholder="Email" name="user_email" />
 <textarea name="message" placeholder="Message" rows="5"></textarea>
+<br></br>
 <button>Submit</button>
 {done && "Thank you, I'll contact you shortly!"}
 </form>
