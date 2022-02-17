@@ -8,10 +8,12 @@ import { LinkedIn } from "@material-ui/icons";
 
  const Contact = () => {
 //   const formRef = useRef();
-//  const [done, setDone] = useState(false);
+ const [done, setDone] = useState(false);
 
-//  const handleSubmit = (e) => {
-//     e.preventDefault();
+const handleSubmit = (e) => {
+   e.preventDefault();
+   e.target.reset();
+   };
 //     emailjs
 //       .sendForm(
 //         "service_6fuz7cp",
@@ -28,8 +30,7 @@ import { LinkedIn } from "@material-ui/icons";
 //           console.log(error.text);
 //         }
 //       );
-//       e.target.reset();
-//   };
+//       
 
   return (
     <div className="c">
@@ -44,25 +45,24 @@ import { LinkedIn } from "@material-ui/icons";
             </div>
             <div className="c-info-item">
               <img className="c-icon" src={Email} alt="" />
-              mohamm1417@gmail.com
+             <span> <a href="mailto:mohamm1417@gmail.com" target="_blank">mohamm1417@gmail.com</a> </span>
             </div>
 
             <div className="c-info-item">
           <LinkedIn className="c-icon"/>
-          <span>LinkedIn</span> 
+          <span> <a href="https://www.linkedin.com/in/mohammad-ibrahim1/" target="_blank">LinkedIn</a></span> 
         </div>
           </div>
         </div>
  <div className="c-right">
 
-  <form>
-   {/* </div>ref={formRef} onSubmit={handleSubmit}> */}
+  <form onSubmit={handleSubmit}>
   <input type="text" placeholder="Name" name="user_name" />
 <input type="text" placeholder="Subject" name="user_subject" />
 <input type="text" placeholder="Email" name="user_email" />
 <textarea name="message" placeholder="Message" rows="5"></textarea>
 <button>Submit</button>
-{/* {done && "Thank you, I'll contact you shortly!"} */}
+{done && "Thank you, I'll contact you shortly!"}
 </form>
         </div>
       </div>
