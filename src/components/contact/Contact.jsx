@@ -1,9 +1,8 @@
 import "./contact.css";
 import Phone from "../../img/phone.png";
-import Email from "../../img/email.png";
 import { useState, useRef} from "react";
  // import emailjs from "emailjs-com";
-import { LinkedIn } from "@material-ui/icons";
+import { LinkedIn, Mail } from "@material-ui/icons";
 
 
  const Contact = () => {
@@ -44,7 +43,7 @@ const handleSubmit = (e) => {
               +1(347)932-9722
             </div>
             <div className="c-info-item">
-              <img className="c-icon" src={Email} alt="" />
+            <Mail className="c-icon"/>
              <span> <a href="mailto:mohamm1417@gmail.com" target="_blank">mohamm1417@gmail.com</a> </span>
             </div>
 

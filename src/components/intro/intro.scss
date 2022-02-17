@@ -21,6 +21,7 @@
 
         img{
             height: 90%;
+            border-radius: 20%;
         }
     }
 
@@ -38,15 +39,17 @@
             justify-content: center;
 
             h1{
-                font-size: 60px;
+                font-size: 50px;
                 margin: 10px 0; 
             }
 
             h2{
                 font-size: 35px;
+                margin: 10px 0; 
             }
             h3{ 
                 font-size: 30px;
+                margin: 10px 0; 
             }
         }
             a {
