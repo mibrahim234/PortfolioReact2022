@@ -40,7 +40,7 @@ const handleSubmit = (e) => {
           <div className="c-info">
             <div className="c-info-item">
               <img src={Phone} alt="" className="c-icon" />
-              +1(347)932-9722
+              (347) 932-9722
             </div>
             <div className="c-info-item">
             <Mail className="c-icon"/>
