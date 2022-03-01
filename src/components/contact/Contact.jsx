@@ -32,7 +32,7 @@ const handleSubmit = (e) => {
 //       
 
   return (
-    <div className="c">
+    <div className="contact" id="contact">
       <div className="c-bg"></div>
       <div className="c-wrapper">
         <div className="c-left">
