@@ -80,8 +80,8 @@
     border: none;
     padding: 10px;
     margin-top: 10px;
-    background-color: white;
-    color: #15023a;
+    background-color: #15023a;
+    color: white;
     font-weight: 500;
     cursor: pointer;
   }
@@ -120,5 +120,6 @@
   
     button {
       margin-top: 10px;
+      width: 100%;
     }
   }

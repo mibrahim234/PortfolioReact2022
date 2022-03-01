@@ -1,5 +1,5 @@
 .resume {
-background-color: #15023a;
+background-color: white;
 color: #15023a;
  display:flex;
  flex-direction: column;
@@ -13,9 +13,6 @@ color: #15023a;
     display: grid;
     .btn {
          cursor: pointer;
-         border-radius: 30%;
-    }
-    .btn:hover {
-        color: lightblue;
+         background: white;
     }
 }
