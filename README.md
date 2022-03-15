@@ -1,13 +1,12 @@
-# React Millionaire? ![GitHub license](https://img.shields.io/badge/license-MIT%20License-blue.svg)
-## React Millionaire: built to test your React Knowledge
+# Portfolio ![GitHub license](https://img.shields.io/badge/license-MIT%20License-blue.svg)
+## Hey I'm Mohammad Ibrahim, Check Out my portfolio below
 
 ## Deployed Site 
 https://react-millionaire-quiz.herokuapp.com/
 
 ## Description 
-React Millionaire is an interactive web application built using React. 
-React Millionaire is an application which tests users on their knowledge of React. <br>I was inspired to make this app from the actual game "Who Wants To Be A Millionaire". <br> The game is simple. The user will receive money after each question they answer. If you answer all the questions correctly you win $1,000,000. User will select an answer and wait three seconds before getting their result. Green indicates correct while red indicates incorrect.<br>  If the user answers incorrectly, the game will end and the amount the user earned will be displayed. <br> Have fun!<br> <br> 
-  ![React Millionaire Screenshot](assets/ReactM.PNG)
+My portfolio is made with React & sass. It is deployed with Express & Heroku. My portfolio contains info about me, the projects which I have completed, as well as a link to my resume. I hope you enjoy getting to learn a bit about me. 
+  ![Portfolio Screenshot](assets/ReactM.PNG)
 
 
 
