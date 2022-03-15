@@ -2,11 +2,12 @@
 ## Hey I'm Mohammad Ibrahim, Check Out my portfolio below
 
 ## Deployed Site 
-https://react-millionaire-quiz.herokuapp.com/
+---fix heroku---
 
 ## Description 
-My portfolio is made with React & sass. It is deployed with Express & Heroku. My portfolio contains info about me, the projects which I have completed, as well as a link to my resume. I hope you enjoy getting to learn a bit about me. 
-  ![Portfolio Screenshot](assets/ReactM.PNG)
+My portfolio is made with React & sass. It is deployed with Express & Heroku. <br>
+My portfolio contains info about me, the projects which I have completed, as well as a link to my resume. <br>I hope you enjoy getting to learn a bit about me. <br><br>
+  ![Portfolio Screenshot](public/assets/portfolio.PNG)
 
 
 
@@ -22,7 +23,7 @@ My portfolio is made with React & sass. It is deployed with Express & Heroku. My
 
 
 ## Installation
-In order to install this project, you must login to GitHub and go to https://github.com/mibrahim234/React-Quiz-App. Once there you will click on the green button that says clone or download. You will be given choices on how to download: using the ssh/html key or downloading the zip file.
+In order to install this project, you must login to GitHub and go to https://github.com/mibrahim234/PortfolioReact2022. Once there you will click on the green button that says clone or download. You will be given choices on how to download: using the ssh/html key or downloading the zip file.
 
 Using SSH/HTML Key: You will copy the link shown and open up either terminal (mac: pre-installed) or gitbash (pc: must be installed). Once the application is open, you will type git clone paste url here. Once you have cloned the git team-generator repo, cd into the repo and type "open . for mac" Or "code . for windows" to open the folder which contains all files used for the website.
 
@@ -39,6 +40,7 @@ Once the app has been initialized, react will open it up in the browser.
 
 ## Technologies
 - [React](https://reactjs.org/)
+- [Sass](https://sass-lang.com/)
 - [Express](https://expressjs.com/)
 - [Heroku](https://heroku.com/)
 
@@ -57,7 +59,7 @@ Read more about it at https://opensource.org/licenses/MIT.
 - mohamm1417@gmail.com
 
 ## Website
-[Link to the GIT repository](https://github.com/mibrahim234/React-Quiz-App)
+[Link to the GIT repository](https://github.com/mibrahim234/PortfolioReact2022)
 
 
 ## Contribution
