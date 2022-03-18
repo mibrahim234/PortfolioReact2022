@@ -1,15 +1,15 @@
 import "./contact.css";
 import Phone from "../../img/phone.png";
 import { useState} from "react";
- // import emailjs from "emailjs-com";
 import { LinkedIn, Mail } from "@material-ui/icons";
 import { validateEmail } from '../../utils/helpers';
+
 
 
  function Contact ()  {
  const [message, setMessage] = useState(false);
 
-const handleSubmit = (e) => {
+ const handleSubmit = (e) => {
    e.preventDefault();
     setMessage(true);
    };
@@ -47,7 +47,8 @@ const handleSubmit = (e) => {
 <textarea name="message" placeholder="Message" rows="5"></textarea>
 <br></br>
 <button>Send</button>
-{message && "Thank you, I'll contact you shortly!"}
+<br></br>
+{message && <span className="span1">Thank you, I'll contact you shortly!</span>}
 </form>
         </div>
       </div>
