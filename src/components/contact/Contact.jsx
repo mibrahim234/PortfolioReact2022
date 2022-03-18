@@ -27,7 +27,7 @@ import { validateEmail } from '../../utils/helpers';
      if (e.target.name === 'email') {
        const isValid = validateEmail(e.target.value);
        if(!isValid) {
-         setErrorMessage('Your Email is Invalid');
+         setErrorMessage('Your Email is Invalid!');
        } else {
          setErrorMessage('');
        }
@@ -83,10 +83,9 @@ import { validateEmail } from '../../utils/helpers';
 
 {/* Message */}
 <textarea name="message" placeholder="Message" rows="5" defaultValue={message} onBlur={handleChange}></textarea>
-{errorMessage && <span className="span1">{errorMessage}</span>}
-<br></br>
 <button>Send</button>
 <br></br>
+{errorMessage && <span className="span1">{errorMessage}</span>}
 {amessage && <span className="span1">Thank you, I'll contact you shortly!</span>}
 </form>
         </div>
