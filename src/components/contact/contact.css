@@ -88,6 +88,9 @@
     width: 50%;
   }
 
+  .formhide {
+    display: none;
+  }
   .span1 {
     font-size: 20px;
     margin-top: 10px;
