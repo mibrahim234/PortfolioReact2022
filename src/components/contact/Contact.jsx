@@ -1,35 +1,19 @@
 import "./contact.css";
 import Phone from "../../img/phone.png";
-import { useState, useRef} from "react";
+import { useState} from "react";
  // import emailjs from "emailjs-com";
 import { LinkedIn, Mail } from "@material-ui/icons";
+import { validateEmail } from '../../utils/helpers';
 
 
- const Contact = () => {
-//   const formRef = useRef();
- const [done, setDone] = useState(false);
+ function Contact ()  {
+ const [message, setMessage] = useState(false);
 
 const handleSubmit = (e) => {
    e.preventDefault();
-   e.target.reset();
+    setMessage(true);
    };
-//     emailjs
-//       .sendForm(
-//         "service_6fuz7cp",
-//         "template_9chw2o8",
-//         formRef.current,
-//         "user_pKrnkSoRtlwzu8n1WSHDY"
-//       )
-//       .then(
-//         (result) => {
-//           console.log(result.text);
-//           setDone(true)
-//         },
-//         (error) => {
-//           console.log(error.text);
-//         }
-//       );
-//       
+    
 
   return (
     <div className="contact" id="contact">
