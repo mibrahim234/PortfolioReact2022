@@ -7,19 +7,48 @@ import { validateEmail } from '../../utils/helpers';
 
 
  function Contact ()  {
- const [message, setMessage] = useState(false);
- // const [className, setClassName] = useState(false)
+ const [amessage, setMessage] = useState(false);
+ const [formState, setFormState] = useState({ name: '', subject: '', email: '', message: ''});
+
+
+ const [errorMessage, setErrorMessage] = useState('');
+ const {name, subject, email, message } = formState; 
+
 
  const handleSubmit = (e) => {
    e.preventDefault();
     setMessage(true);
+    if(!errorMessage) {
+      console.log('Submit Form', formState)
+    }
    };
     
+   const handleChange = (e) => {
+     if (e.target.name === 'email') {
+       const isValid = validateEmail(e.target.value);
+       if(!isValid) {
+         setErrorMessage('Your Email is Invalid');
+       } else {
+         setErrorMessage('');
+       }
+     } else {
+       if(!e.target.value.length) {
+         setErrorMessage(`${e.target.name} is required.`);
+       } else {
+         setErrorMessage('');
+       }
+     }
+     if(!errorMessage) {
+       setFormState({ ...formState, [e.target.name]: e.target.value });
+       console.log('Handle Form', formState);
+     }
+   };
 
   return (
     <div className="contact" id="contact">
       <div className="c-bg"></div>
       <div className="c-wrapper">
+        {/* Left container */}
         <div className="c-left">
           <h1 className="c-title">Let's get in touch!</h1>
           <div className="c-info">
@@ -49,7 +78,7 @@ import { validateEmail } from '../../utils/helpers';
 <br></br>
 <button>Send</button>
 <br></br>
-{message && <span className="span1">Thank you, I'll contact you shortly!</span>}
+{amessage && <span className="span1">Thank you, I'll contact you shortly!</span>}
 </form>
         </div>
       </div>
