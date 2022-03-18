@@ -2,7 +2,7 @@
 ## Hey I'm Mohammad Ibrahim, Check Out my portfolio below
 
 ## Deployed Site 
----fix heroku---
+https://portfolioreact2022.herokuapp.com/
 
 ## Description 
 My portfolio is made with React & sass. It is deployed with Express & Heroku. <br>
