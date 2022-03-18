@@ -8,12 +8,11 @@ import { validateEmail } from '../../utils/helpers';
 
  function Contact ()  {
  const [message, setMessage] = useState(false);
- const [className, setClassName] = useState(false)
+ // const [className, setClassName] = useState(false)
 
  const handleSubmit = (e) => {
    e.preventDefault();
     setMessage(true);
-    setClassName(true);
    };
     
 
