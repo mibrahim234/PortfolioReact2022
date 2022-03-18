@@ -69,12 +69,21 @@ import { validateEmail } from '../../utils/helpers';
         </div>
 
         {/* Right side container  */}
+        {/* OnBlur used with form validation */}
  <div className="c-right">
   <form onSubmit={handleSubmit}>
-  <input type="text" placeholder="Name" name="user_name" />
-<input type="text" placeholder="Subject" name="user_subject" />
-<input type="text" placeholder="Email" name="user_email" />
-<textarea name="message" placeholder="Message" rows="5"></textarea>
+    {/* NAME */}
+  <input type="text" placeholder="Name" name="name" defaultValue={name} onBlur={handleChange} />
+
+  {/* Subject */}
+<input type="text" placeholder="Subject" name="subject" defaultValue={subject} onBlur={handleChange} />
+
+{/* Email */}
+<input type="text" placeholder="Email" name="email" defaultValue={email} onBlur={handleChange} />
+
+{/* Message */}
+<textarea name="message" placeholder="Message" rows="5" defaultValue={message} onBlur={handleChange}></textarea>
+{errorMessage && <span className="span1">{errorMessage}</span>}
 <br></br>
 <button>Send</button>
 <br></br>
