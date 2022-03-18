@@ -37,16 +37,17 @@ const handleSubmit = (e) => {
         </div>
           </div>
         </div>
- <div className="c-right">
 
+        {/* Right side container  */}
+ <div className="c-right">
   <form onSubmit={handleSubmit}>
   <input type="text" placeholder="Name" name="user_name" />
 <input type="text" placeholder="Subject" name="user_subject" />
 <input type="text" placeholder="Email" name="user_email" />
 <textarea name="message" placeholder="Message" rows="5"></textarea>
 <br></br>
-<button>Submit</button>
-{done && "Thank you, I'll contact you shortly!"}
+<button>Send</button>
+{message && "Thank you, I'll contact you shortly!"}
 </form>
         </div>
       </div>
