@@ -1,3 +1,10 @@
 $mainColor: #15023a;
 
 $width: 768px;
+
+// for responsive design
+@mixin mobile {
+    @media (max-width: #{$width}){
+        @content
+    }
+}
